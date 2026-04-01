@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-81D6829LG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-81D6829LG0');
+  </script>
 
-  gtag('config', 'G-81D6829LG0');
-</script>
+  <!-- Canonical -->
+  <link rel="canonical" href="https://andrewjohngilbert.github.io/soonthesis/" />
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Thesis",
+    "headline": "Multimodal Conditioning for Controllable Image and Video Generation",
+    "name": "Multimodal Conditioning for Controllable Image and Video Generation",
+    "author": {
+      "@type": "Person",
+      "name": "Soon Yau Cheong",
+      "sameAs": [
+        "https://andrewjohngilbert.github.io/soonthesis/"
+      ]
+    },
+    "datePublished": "2025-01-01",
+    "inSupportOf": "Doctor of Philosophy (PhD) in Computer Vision and Generative Modelling",
+    "publisher": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Surrey"
+    },
+    "url": "https://andrewjohngilbert.github.io/soonthesis/",
+    "image": "assets/SoonThesisTeaser.jpg",
+    "description": "PhD thesis by Soon Yau Cheong (University of Surrey, 2025) on multimodal conditioning for controllable image and video generation, introducing pose tokens, unified multimodal adapters, sparse camera and pose interpolation for video diffusion transformers, and new evaluation metrics such as People Count Error (PCE).",
+    "keywords": [
+      "generative AI",
+      "image generation",
+      "video generation",
+      "diffusion models",
+      "transformers",
+      "multimodal conditioning",
+      "pose control",
+      "camera control",
+      "virtual try-on",
+      "People Count Error",
+      "PCE"
+    ],
+    "sameAs": [
+      "https://andrewjohngilbert.github.io/soonthesis/assets/SoonYauCheong_Thesis.pdf"
+    ]
+  }
+  </script>
 
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.">
-  <meta property="og:title" content="DEAR: Depth-Estimated Action Recognition"/>
-  <meta property="og:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset."/>
-  <meta property="og:url" content="https://andrewjohngilbert.github.io/dear/"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="assets/dear_Teaser.png" />
+  <meta name="description" content="PhD thesis by Soon Yau Cheong (University of Surrey, 2025) on multimodal conditioning for controllable image and video generation, including pose tokens, unified multimodal adapters, sparse camera and pose interpolation for video diffusion transformers, and new evaluation metrics such as People Count Error (PCE).">
+  <meta property="og:title" content="Multimodal Conditioning for Controllable Image and Video Generation"/>
+  <meta property="og:description" content="PhD thesis (University of Surrey, 2025) by Soon Yau Cheong on multimodal conditioning for controllable image and video generation, enabling precise pose and camera control and introducing new evaluation metrics for human image quality."/>
+  <meta property="og:url" content="https://andrewjohngilbert.github.io/soonthesis/"/>
+  <meta property="og:image" content="assets/SoonThesisTeaser.jpg" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
-  <meta name="twitter:title" content="DEAR: Depth-Estimated Action Recognition">
-  <meta name="twitter:description" content="This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="asserts/dear_Teaser.png">
+  <meta name="twitter:title" content="Multimodal Conditioning for Controllable Image and Video Generation – PhD Thesis of Soon Yau Cheong">
+  <meta name="twitter:description" content="PhD thesis (University of Surrey, 2025) on multimodal conditioning for controllable image and video generation, covering pose tokens, unified adapters, sparse camera control for video diffusion transformers, and People Count Error (PCE).">
+  <meta name="twitter:image" content="assets/SoonThesisTeaser.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Machine Learning, Depth, Video Understanding,andrew Gilbert, Sadegh Rahmani,">
+
+  <meta name="keywords" content="generative AI, image generation, video generation, diffusion models, transformers, multimodal conditioning, pose control, camera control, virtual try-on, People Count Error, PCE, Soon Yau Cheong">
+  <meta name="author" content="Soon Yau Cheong">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-  <title>DEAR: Depth-Estimated Action Recognition</title>
+  <title>Multimodal Conditioning for Controllable Image and Video Generation – PhD Thesis of Soon Yau Cheong</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -54,165 +91,231 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
+<!-- ======================= HERO / HEADER ======================= -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+          <h1 class="title is-1 publication-title">
+            Multimodal Conditioning for Controllable Image and Video Generation
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Soon Yau Cheong
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              PhD in Computer Vision / Generative Modelling, University of Surrey, UK<br>
+              2025
+            </span>
+          </div>
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DEAR: Depth-Estimated Action Recognition</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://www.linkedin.com/in/sadegh-rahmani" target="_blank">Sadegh Rahmani</a>[1]<sup></sup>,</span>
-                <span class="author-block">
-                  <a href="F" target="_blank">Filip Rybansky</a>[2]<sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://www.ncl.ac.uk/medical-sciences/people/profile/quocvuong.html" target="_blank">Quoc Vuong</a>[2]<sup></sup>,</span>
-                <span class="author-block">
-                  <a href="https://www.surrey.ac.uk/people/frank-guerin" target="_blank">Frank Guerin</a>[1]<sup></sup>,</span>
-                  <span class="author-block">
-                    <a href="https://andrewjohngilbert.github.io/" target="_blank">Andrew Gilbert</a>[1]<sup></sup>,</span>
-                  </div>
+            <div class="publication-links">
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">[1] Unviersity of Surrey [2] Unviersityof Newcastle<br> <a href="https://eccv2024.ecva.net/" target="_blank">The European Conference of Computer Vision 2024</a> <a href="https://sites.google.com/view/hcvworkshop2024" target="_blank">Human-inspired Computer Vision Workshop</a>              
-                  </div>
+              <!-- Thesis PDF -->
+              <span class="link-block">
+                <!-- TODO: confirm final PDF filename/path -->
+                <a href="assets/SoonYauCheong_Thesis.pdf" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Thesis PDF</span>
+                </a>
+              </span>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://andrewjohngilbert.github.io/dear/assets/dear_paper.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                   <span class="link-block">
-                      <a href="assets/DEAR HCV Poster.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Poster</span>
-                    </a>
-                  </span>
- 
-                  <!-- Github link -->
-                <span class="link-block">
-                    <a href="https://github.com/SadeghRahmaniB/DEAR" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+              <!--  personal / LinkedIn link – update if you have a URL -->
+              
+              <span class="link-block">
+                <a href="https://www.linkedin.com/in/soonyau/" target="_blank"
+                   class="external-link button is-normal is-rounded is-light">
+                  <span class="icon"><i class="fab fa-linkedin"></i></span>
+                  <span>Profile</span>
+                </a>
+              </span>
               
 
-                
             </div>
-          </div>
+
+            <!-- Share buttons -->
+            <div class="columns is-centered" style="margin-top:0.75rem;">
+              <div class="column is-narrow">
+                <div class="buttons are-small is-centered">
+                  <a href="https://twitter.com/intent/tweet?url=https://andrewjohngilbert.github.io/soonthesis/&text=Multimodal Conditioning for Controllable Image and Video Generation – PhD Thesis of Soon Yau Cheong"
+                     target="_blank" class="button is-info is-light">
+                    <span class="icon"><i class="fab fa-twitter"></i></span><span>Tweet</span>
+                  </a>
+                  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://andrewjohngilbert.github.io/soonthesis/"
+                     target="_blank" class="button is-link is-light">
+                    <span class="icon"><i class="fab fa-linkedin"></i></span><span>Share</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- TL;DR -->
+            <div class="content" style="margin-top:1rem;">
+              <div class="box" style="text-align:left;">
+                <p style="margin-bottom:0.5rem;">
+                  <strong>TL;DR:</strong>
+                  This PhD develops multimodal conditioning methods that give users precise, flexible control over image and video generation:
+                </p>
+                <ul style="margin-top:0;">
+                  <li>Introduces <strong>pose tokens</strong> that compress 2D and 3D human pose into compact conditioning tokens for transformers and diffusion models.</li>
+                  <li>Proposes a <strong>unified adapter</strong> that fuses structural and visual conditioning, avoiding mode conflict in cascaded control adapters.</li>
+                  <li>Restores and enhances <strong>camera and human pose control</strong> in video diffusion transformers using sparse keyframe conditioning and motion guidance.</li>
+                  <li>Defines new evaluation metrics such as <strong>People Count Error (PCE)</strong> for assessing human image quality in generative models.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div><!-- column -->
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- ======================= TEASER IMAGE ======================= -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/dear_teaser.jpg">
-      <h2 class="subtitle has-text-centered">
-        We perform supervised action recognition using a fusion of RGB and depth map frames. We used S4V network for processing RGB and the same network plus VideoMamba to extract depth features. Gated cross-attention (GCA) has been used for fusing modalities, while mean operation has been selected for fusing models' scores.
+      <figure class="image">
+        <img src="assets/SoonThesisTeaser.jpg"
+             alt="High-resolution virtual try-on with real-world background. Top: reference fashion images for visual conditioning. Bottom: virtual try-on results.">
+      </figure>
+      <h2 class="subtitle has-text-centered" style="margin-top:1rem;">
+        High-resolution virtual try-on with real-world background. <strong>Top:</strong> reference fashion images used for visual conditioning. <strong>Bottom:</strong> virtual try-on results generated by the proposed multimodal conditioning framework.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- ======================= ABSTRACT ======================= -->
+<section class="section hero is-light" id="abstract">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Detecting actions in videos, particularly within cluttered scenes, poses significant challenges due to the limitations of 2D frame analysis from a camera perspective. Unlike human vision, which benefits from 3D understanding, recognizing actions in such environments can be difficult. This research introduces a novel approach integrating 3D features and depth maps alongside RGB features to enhance action recognition accuracy. Our method involves processing estimated depth maps through a separate branch from the RGB feature encoder and fusing the features to understand the scene and actions comprehensively. Using the Side4Video framework and VideoMamba, which employ CLIP and VisionMamba for spatial feature extraction, our approach outperformed our implementation of the Side4Video network on the Something-Something V2 dataset.
+            The field of generative AI has progressed at a rapid pace and can now produce high-quality images and videos from text prompts. This evolution has also led to greater user demand for precise control over the outcomes, posing new challenges in effectively directing generation processes. Standard conditioning techniques, mainly using text and image inputs, have proven useful but remain limited in handling more complex requirements, such as specific human pose, camera orientation or fine-grained visual appearance.
+          </p>
+          <p>
+            This PhD research enhances conditioning techniques by introducing a parametric approach that emphasises multimodal conditioning for image and video generation models. It focuses on developing methods to enable more comprehensive user control, incorporating various modalities such as pose and spatial inputs to improve alignment between model capabilities and user intentions across different aspects of generation. By refining the conditioning mechanisms, this research aims to bridge the gap between user specifications and model outputs, ensuring greater flexibility, precision, and coherence in generated content.
+          </p>
+          <p>
+            This thesis presents several key contributions. Traditional methods for human pose conditioning, which rely on skeleton images, contain substantial redundancy and are computationally inefficient for modern architectures. To address this, we proposed the concept of <em>pose token</em>, where raw pose parameters are compressed into tokens that can be used as conditioning elements via attention mechanisms, a common approach in advanced architectures. We validated this token-based approach with both 2D body keypoints and 3D body parameters, demonstrating its effectiveness across multiple architectures, from transformers to diffusion models. Additionally, our parametric approach introduces techniques for human and camera pose interpolation within image generation.
+          </p>
+          <p>
+            A common approach for conditioning diffusion models involves incorporating adapters – lightweight models to deliver control signals to pre-trained image models. However, our research has revealed that this method often introduces a critical issue of <em>mode conflict</em>. This problem, worsened by cascading multiple adapters, results from an imbalance in control signals: the model can become dominated by one adapter, limiting the generative power of both the base model and other adapters. Despite its prevalence, this issue remains largely unaddressed in existing research. To solve this, we devised a unified adapter architecture that integrates both structural and visual conditioning within a single, harmonised control pathway. This unified approach delivers balanced multimodal conditioning, avoiding the pitfalls of adapter cascade and enabling greater model flexibility. As a result, our approach’s high controllability empowers versatile human image generation and editing tasks.
+          </p>
+          <p>
+            Our research in 2D image generation was extended to video generation. We show that architectural differences in transformer-based diffusion models make existing camera control methods for U-Net-based diffusion models ineffective. Through extensive experimentation, optimal architectures and camera representations were identified. Combined with our novel camera motion guidance, camera control was restored for video diffusion transformers, with motion boosted by over 400%. Our research on human pose conditioning for images extends to video generation. Unlike existing methods that require detailed camera pose input for every frame, our approach achieves smooth video motion with minimal input. By specifying only the initial and final camera poses, our system interpolates between frames to produce continuous camera movements, enabling consistent, controlled video generation with reduced data requirements. This sparse video conditioning approach significantly simplifies user interaction while ensuring fluid transitions and stable pose dynamics across frames.
+          </p>
+          <p>
+            Many of the challenges we aimed to address were novel, often lacking established evaluation methods. As a result, we proposed new evaluation metrics to rigorously assess these areas. One of these, <em>People Count Error (PCE)</em>, identifies a unique type of error specific to AI-generated human images, such as inaccurate body part generation. This metric has already gained traction in the research community and is being adopted in image generation benchmarks, helping to set new standards for evaluating AI-driven human image quality.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
+<!-- ======================= PUBLICATIONS LINKED TO THIS THESIS ======================= -->
+<section class="section hero is-light" id="publications">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Publications Linked to This Thesis</h2>
+        <div class="content">
+          <p>
+            The main chapters of this thesis are closely related to the following peer-reviewed publications:
+          </p>
 
+          <ol>
+            <li>
+              <strong>UPGPT: Universal Diffusion Model for Person Image Generation, Editing and Pose Transfer</strong><br>
+              Soon Cheong, Armin Mustafa, Andrew Gilbert.<br>
+              <em>ICCV Workshop on Computer Vision for the Metaverse (ICCVWS’23)</em>, 2023.<br>
+              <a href="https://github.com/soon-yau/upgpt" target="_blank">Code &amp; project page</a>
+            </li>
 
-<!-- Paper poster -->
+            <li>
+              <strong>ViscoNet: Bridging and Harmonizing Visual and Textual Conditioning for ControlNet</strong><br>
+              Soon Cheong, Armin Mustafa, Andrew Gilbert.<br>
+              <em>European Conference on Computer Vision (ECCV) 2024 – FashionAI: Exploring the Intersection of Fashion and Artificial Intelligence for Reshaping the Industry</em>, 2024.<br>
+              <a href="https://soon-yau.github.io/visconet/" target="_blank">Project page</a>
+            </li>
 
-  <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
+            <li>
+              <strong>Boosting Camera Motion Control for Video Diffusion Transformers</strong><br>
+              Soon Yau Cheong, Duygu Ceylan, Armin Mustafa, Andrew Gilbert, Chun-Hao Paul Huang.<br>
+              <em>British Machine Vision Conference (BMVC)</em>, 2025.<br>
+              <a href="https://soon-yau.github.io/CameraMotionGuidance/" target="_blank">Project page</a>
+            </li>
+          </ol>
 
-      <iframe  src="assets/DEAR HCV Poster.pdf" width="100%" height="1000">
-          </iframe>
-        
+          <p>
+            These works are integrated and extended within the thesis, which presents a unified perspective on multimodal conditioning for controllable image and video generation.
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{Rahmani:Dear:ECCVWS:2024,
-        AUTHOR = Rahmani, Sadegh and Rybansky, Filip and Vuong, Quoc and Guerin, Frank and Gilbert, Andrew ",
-        TITLE = "DEAR: Depth-Estimated Action Recognition",
-        BOOKTITLE = " The European Conference of Computer Vision 2024, Human-inspired Computer Vision Workshop",
-        YEAR = "2024",
-        }</code></pre>
-    </div>
+  </div>
 </section>
-<!--End BibTex citation -->
 
+<!-- ======================= BIBTEX ======================= -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <button class="button is-small is-info" onclick="copyBibtex()">Copy BibTeX</button>
+    <pre id="bibtex-entry"><code>@phdthesis{Cheong2025Thesis,
+  author    = {Soon Yau Cheong},
+  title     = {Multimodal Conditioning for Controllable Image and Video Generation},
+  school    = {University of Surrey},
+  year      = {2025},
+  address   = {Guildford, United Kingdom},
+  note      = {PhD thesis on pose tokens, unified multimodal adapters, sparse camera and pose control for diffusion transformers, and People Count Error (PCE) for evaluating human image generation}
+}</code></pre>
+  </div>
+</section>
 
-  <footer class="footer">
+<footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <strong>Multimodal Conditioning for Controllable Image and Video Generation</strong><br>
+            PhD thesis by Soon Yau Cheong, University of Surrey, 2025.<br>
+            <br>
+            This page was built using the
+            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>
+            adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            <br>
+            Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+              CC BY-SA 4.0</a>.
           </p>
-
         </div>
       </div>
     </div>
   </div>
 </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<script>
+  function copyBibtex() {
+    var bib = document.getElementById('bibtex-entry').innerText;
+    navigator.clipboard.writeText(bib);
+  }
+</script>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
